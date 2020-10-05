@@ -49,6 +49,9 @@ dependencies {
 
     // CorDapp dependencies.
     cordapp project(":contracts")
+    cordapp "com.r3.corda.lib.accounts:accounts-contracts:1.0.2"
+    cordapp "com.r3.corda.lib.accounts:accounts-workflows:1.1-SNAPSHOT"
+    cordapp "com.r3.corda.lib.ci:ci-workflows:1.0"
 }
 
 task integrationTest(type: Test, dependsOn: []) {
